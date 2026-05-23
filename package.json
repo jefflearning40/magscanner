@@ -1,0 +1,31 @@
+{
+  "name": "magscanner",
+  "version": "1.0.0",
+  "description": "Projet API REST pour révision",
+  "main": "index.js",
+"scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefflearning40/magscanner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jefflearning40/magscanner/issues"
+  },
+  "homepage": "https://github.com/jefflearning40/magscanner#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
