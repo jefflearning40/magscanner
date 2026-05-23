@@ -1,4 +1,5 @@
 const express = require('express');
+const db = require('./src/database/db');
 
 const app = express();
 
@@ -9,6 +10,24 @@ app.get('/api/test', (req, res) => {
         success: true,
         message: 'MagScanner API fonctionne'
     });
+});
+
+app.get('/api/products', (req, res) => {
+
+    db.query(
+        'SELECT * FROM products',
+        (error, results) => {
+
+            if (error) {
+                return res.status(500).json({
+                    error: 'Erreur SQL'
+                });
+            }
+
+            res.status(200).json(results);
+        }
+    );
+
 });
 
 const PORT = 3000;
