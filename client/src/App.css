@@ -2,15 +2,33 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, var(--color-background-top), var(--color-background-bottom));
+  background: linear-gradient(
+    180deg,
+    var(--color-background-top),
+    var(--color-background-bottom)
+  );
   color: var(--color-text);
 }
 
+/* HEADER */
+
 .logo-container {
   display: inline-block;
-  padding: 12px 40px;
+  padding: var(--logo-padding-y) var(--logo-padding-x);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-main);
+}
+
+.logo-dark {
+  background: var(--color-background-top);
+  color: var(--color-primary);
+  padding: 0 8px;
+}
+
+.logo-yellow {
+  background: var(--color-primary);
+  color: var(--color-background-top);
+  padding: 0 8px;
 }
 
 .subtitle {
@@ -18,18 +36,53 @@
   font-weight: 700;
 }
 
+/* CARDS */
+
 .dashboard-card {
-  background: linear-gradient(145deg, var(--color-card-start), var(--color-card-end));
   color: var(--color-text);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-main);
   box-shadow: var(--shadow-main);
+  transition: all var(--transition-fast);
 }
 
 .dashboard-card:hover {
   transform: translateY(-3px);
-  transition: 0.25s;
+  box-shadow: var(--shadow-hover);
 }
+
+.card-image {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-boutiques {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("./assets/images/boutiques.png");
+}
+
+.card-produits {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("./assets/images/rayon.png");
+}
+
+.card-scanner {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),
+    url("./assets/images/scanners.png");
+}
+
+/* IMAGE PRINCIPALE */
 
 .banner-card {
   border: 1px solid var(--color-border);
@@ -41,6 +94,25 @@
   height: var(--banner-height);
   object-fit: cover;
 }
+
+/* BOUTONS */
+
+.btn-warning {
+  background: var(--color-primary);
+  color: black;
+  border: 1px solid var(--color-primary);
+  transition: all var(--transition-fast);
+}
+
+.btn-warning:hover {
+  background: var(--color-background-top) !important;
+  color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* FOOTER */
 
 .footer {
   color: var(--color-text-muted);
