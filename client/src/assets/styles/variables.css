@@ -1,0 +1,64 @@
+:root{
+
+/* FOND */
+
+--color-background-top:#111827;
+
+--color-background-bottom:#1f2937;
+
+
+/* CARDS */
+
+--color-card-start:#232526;
+
+--color-card-end:#414345;
+
+--color-card-hover:#4f5b66;
+
+
+/* COULEURS */
+
+--color-primary:#ffc107;
+
+--color-primary-dark:#d8a500;
+
+--color-text:#ffffff;
+
+--color-text-muted:#b7bec7;
+
+--color-border:#ffc107;
+
+
+/* OMBRES */
+
+--shadow-main:
+0 8px 20px rgba(0,0,0,.35);
+
+--shadow-hover:
+0 12px 30px rgba(0,0,0,.45);
+
+
+/* BORDS */
+
+--radius-main:18px;
+
+--radius-card:22px;
+
+
+/* HEADER */
+
+--logo-padding-y:12px;
+
+--logo-padding-x:40px;
+
+
+/* IMAGE */
+
+--banner-height:180px;
+
+
+/* TRANSITIONS */
+
+--transition-fast:.25s;
+
+}
