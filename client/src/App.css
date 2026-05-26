@@ -117,3 +117,35 @@
 .footer {
   color: var(--color-text-muted);
 }
+.fake-map{
+min-height:350px;
+
+border:
+1px solid var(--color-border);
+
+border-radius:
+var(--radius-main);
+
+background-image:
+url("./assets/images/boutiques.png");
+
+background-size:
+cover;
+
+background-position:
+center;
+}
+
+.map-point{
+
+border:none;
+
+background:none;
+
+font-size:2rem;
+
+cursor:pointer;
+
+margin:30px;
+
+}
