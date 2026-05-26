@@ -1,4 +1,4 @@
-import "./styles/variables.css";
+import "./assets/Styles/variables.css";
 import "./App.css";
 import storeBanner from "./assets/images/photoIA1.png";
 
