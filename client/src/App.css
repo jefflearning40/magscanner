@@ -4,14 +4,20 @@ APP
 
 .app {
   min-height: 100vh;
+
   display: flex;
+
   flex-direction: column;
-  background: linear-gradient(
-    180deg,
-    var(--color-background-top),
-    var(--color-background-bottom)
-  );
-  color: var(--color-text);
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-background-top),
+      var(--color-background-bottom)
+    );
+
+  color:
+    var(--color-text);
 }
 
 /* =========================
@@ -19,27 +25,52 @@ HEADER
 ========================= */
 
 .logo-container {
-  display: inline-block;
-  padding: var(--logo-padding-y) var(--logo-padding-x);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-main);
+
+  display:
+    inline-block;
+
+  padding:
+    var(--logo-padding-y)
+    var(--logo-padding-x);
+
+  border:
+    2px solid var(--color-border);
+
+  border-radius:
+    var(--radius-main);
 }
 
 .logo-dark {
-  background: var(--color-background-top);
-  color: var(--color-primary);
-  padding: 0 8px;
+
+  background:
+    var(--color-background-top);
+
+  color:
+    var(--color-primary);
+
+  padding:
+    0 8px;
 }
 
 .logo-yellow {
-  background: var(--color-primary);
-  color: var(--color-background-top);
-  padding: 0 8px;
+
+  background:
+    var(--color-primary);
+
+  color:
+    var(--color-background-top);
+
+  padding:
+    0 8px;
 }
 
 .subtitle {
-  color: var(--color-text);
-  font-weight: 700;
+
+  color:
+    var(--color-text);
+
+  font-weight:
+    700;
 }
 
 /* =========================
@@ -47,16 +78,30 @@ CARDS
 ========================= */
 
 .dashboard-card {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-main);
-  box-shadow: var(--shadow-main);
-  transition: all var(--transition-fast);
-  overflow: hidden;
+
+  background:
+    rgba(255,255,255,.92);
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-main);
+
+  box-shadow:
+    var(--shadow-main);
+
+  transition:
+    all var(--transition-fast);
+
+  overflow:
+    hidden;
 }
 
 .dashboard-card:hover {
-  box-shadow: var(--shadow-hover);
+
+  box-shadow:
+    var(--shadow-hover);
 }
 
 /* =========================
@@ -64,83 +109,129 @@ CARDS IMAGE ACCUEIL
 ========================= */
 
 .card-image {
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  background-repeat:
+    no-repeat;
 }
 
 .card-image::before {
 
-content:"";
+  content:"";
 
-position:absolute;
+  position:absolute;
 
-inset:0;
+  inset:0;
 
-background:
-linear-gradient(
-rgba(0,0,0,.08),
-rgba(0,0,0,.28)
-);
+  background:
+    linear-gradient(
+      var(--overlay-card-top),
+      var(--overlay-card-bottom)
+    );
 
-z-index:1;
-
+  z-index:1;
 }
 
 .card-image .card-body {
 
-position:relative;
+  position:
+    relative;
 
-z-index:2;
+  z-index:
+    2;
 
-min-height:230px;
+  min-height:
+    var(--home-card-height);
 
-display:flex;
+  display:
+    flex;
 
-flex-direction:column;
+  flex-direction:
+    column;
 
-justify-content:center;
+  justify-content:
+    center;
 
-align-items:center;
+  align-items:
+    center;
 
-padding:30px;
-
+  padding:
+    30px;
 }
 
 .card-image h3 {
-  color: white;
-  font-weight: 700;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.9);
+
+  color:
+    var(--color-text);
+
+  font-weight:
+    700;
+
+  text-shadow:
+    var(--shadow-main);
 }
 
 .card-image p {
-  color: white;
-  font-weight: 600;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+
+  color:
+    var(--color-text);
+
+  font-weight:
+    600;
+
+  text-shadow:
+    var(--shadow-main);
 }
 
 .card-image i {
-  color: var(--color-primary);
-  filter: drop-shadow(0 0 10px rgba(255, 193, 7, 0.8));
+
+  color:
+    var(--color-primary);
+
+  filter:
+    drop-shadow(
+      0 0 10px rgba(255,193,7,.8)
+    );
 }
 
 .card-image .btn {
-  position: relative;
-  z-index: 3;
+
+  position:
+    relative;
+
+  z-index:
+    3;
 }
 
+/* IMAGES */
+
 .card-boutiques {
-  background-image: url("./assets/images/boutiques.png");
+
+  background-image:
+    url("./assets/images/boutiques.png");
 }
 
 .card-produits {
-  background-image: url("./assets/images/rayon.png");
+
+  background-image:
+    url("./assets/images/rayon.png");
 }
 
 .card-scanner {
-  background-image: url("./assets/images/scanners.png");
+
+  background-image:
+    url("./assets/images/scanners.png");
 }
 
 /* =========================
@@ -148,14 +239,24 @@ IMAGE PRINCIPALE
 ========================= */
 
 .banner-card {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-main);
-  box-shadow: var(--shadow-main);
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-main);
+
+  box-shadow:
+    var(--shadow-main);
 }
 
 .banner {
-  height: var(--banner-height);
-  object-fit: cover;
+
+  height:
+    var(--banner-height);
+
+  object-fit:
+    cover;
 }
 
 /* =========================
@@ -163,58 +264,110 @@ BOUTONS
 ========================= */
 
 .btn-warning {
-  background: var(--color-primary);
-  color: black;
-  border: 1px solid var(--color-primary);
-  transition: all var(--transition-fast);
+
+  background:
+    var(--color-primary);
+
+  color:
+    black;
+
+  border:
+    1px solid var(--color-primary);
+
+  transition:
+    all var(--transition-fast);
 }
 
 .btn-warning:hover {
-  background: var(--color-background-top) !important;
-  color: var(--color-primary) !important;
-  border: 1px solid var(--color-primary);
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+
+  background:
+    var(--color-background-top)
+    !important;
+
+  color:
+    var(--color-primary)
+    !important;
+
+  border:
+    1px solid var(--color-primary);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    var(--shadow-hover);
 }
 
 /* =========================
-FICHE BOUTIQUE
+PAGE BOUTIQUES
 ========================= */
 
 .shop-detail-card {
-  min-height: 620px;
-  position: sticky;
-  top: 30px;
+
+  min-height:
+    var(--shop-card-height);
+
+  position:
+    sticky;
+
+  top:
+    30px;
 }
 
 .shop-detail-card p {
-  color: #222;
-  font-size: 1rem;
-  margin-bottom: 18px;
+
+  color:
+    var(--color-text-dark);
+
+  font-size:
+    1rem;
+
+  margin-bottom:
+    18px;
 }
 
-/* =========================
-CARTE
-========================= */
-
 .map-panel {
-  position: sticky;
-  top: 30px;
+
+  position:
+    sticky;
+
+  top:
+    30px;
 }
 
 .leaflet-map {
-  width: 100%;
-  height: 620px;
-  min-height: 620px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-main);
-  overflow: hidden;
-  box-shadow: var(--shadow-main);
+
+  width:
+    100%;
+
+  height:
+    var(--map-height);
+
+  min-height:
+    var(--map-height);
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-main);
+
+  overflow:
+    hidden;
+
+  box-shadow:
+    var(--shadow-main);
 }
 
 .leaflet-container {
-  width: 100% !important;
-  height: 620px !important;
+
+  width:
+    100%
+    !important;
+
+  height:
+    var(--map-height)
+    !important;
 }
 
 /* =========================
@@ -222,13 +375,21 @@ FORMULAIRE
 ========================= */
 
 .form-control {
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
+
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-input);
 }
 
 .form-control:focus {
-  box-shadow: 0 0 12px rgba(255, 193, 7, 0.5);
-  border: 1px solid var(--color-primary);
+
+  box-shadow:
+    var(--input-focus);
+
+  border:
+    1px solid var(--color-primary);
 }
 
 /* =========================
@@ -236,6 +397,10 @@ FOOTER
 ========================= */
 
 .footer {
-  color: var(--color-text-muted);
-  margin-top: 40px;
+
+  color:
+    var(--color-text-muted);
+
+  margin-top:
+    40px;
 }

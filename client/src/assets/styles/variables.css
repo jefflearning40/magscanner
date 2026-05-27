@@ -1,35 +1,112 @@
 :root {
-  /* FOND */
-  --color-background-top: #111827;
-  --color-background-bottom: #1f2937;
 
-  /* CARDS */
-  --color-card-start: #232526;
-  --color-card-end: #414345;
-  --color-card-hover: #4f5b66;
+/* =========================
+FOND
+========================= */
 
-  /* COULEURS */
-  --color-primary: #ffc107;
-  --color-primary-dark: #d8a500;
-  --color-text: #ffffff;
-  --color-text-muted: #b7bec7;
-  --color-border: #ffc107;
+--color-background-top:#111827;
 
-  /* OMBRES */
-  --shadow-main: 0 8px 20px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.45);
+--color-background-bottom:#1f2937;
 
-  /* BORDS */
-  --radius-main: 18px;
-  --radius-card: 22px;
 
-  /* HEADER */
-  --logo-padding-y: 12px;
-  --logo-padding-x: 40px;
+/* =========================
+CARDS
+========================= */
 
-  /* IMAGE */
-  --banner-height: 280px;
+--color-card-start:#232526;
 
-  /* TRANSITIONS */
-  --transition-fast: 0.25s;
+--color-card-end:#414345;
+
+--color-card-hover:#4f5b66;
+
+--overlay-card-top:
+rgba(0,0,0,.08);
+
+--overlay-card-bottom:
+rgba(0,0,0,.28);
+
+
+/* =========================
+COULEURS
+========================= */
+
+--color-primary:#ffc107;
+
+--color-primary-dark:#d8a500;
+
+--color-text:#ffffff;
+
+--color-text-dark:#222222;
+
+--color-text-muted:#b7bec7;
+
+--color-border:#ffc107;
+
+
+/* =========================
+OMBRES
+========================= */
+
+--shadow-main:
+0 8px 20px rgba(0,0,0,.35);
+
+--shadow-hover:
+0 12px 30px rgba(0,0,0,.45);
+
+--shadow-yellow:
+0 0 18px rgba(255,193,7,.5);
+
+
+/* =========================
+BORDS
+========================= */
+
+--radius-main:18px;
+
+--radius-card:22px;
+
+--radius-input:12px;
+
+
+/* =========================
+HEADER
+========================= */
+
+--logo-padding-y:12px;
+
+--logo-padding-x:40px;
+
+
+/* =========================
+IMAGE
+========================= */
+
+--banner-height:280px;
+
+--home-card-height:230px;
+
+
+/* =========================
+CARTE
+========================= */
+
+--map-height:620px;
+
+--shop-card-height:620px;
+
+
+/* =========================
+FORMULAIRES
+========================= */
+
+--input-focus:
+0 0 12px rgba(255,193,7,.5);
+
+
+/* =========================
+TRANSITIONS
+========================= */
+
+--transition-fast:.25s;
+
 }
