@@ -1,7 +1,14 @@
 const express = require("express");
+const cors = require("cors");
 const db = require("./src/database/db");
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 
 app.use(express.json());
 
