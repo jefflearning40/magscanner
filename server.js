@@ -157,6 +157,8 @@ app.delete("/api/products/:id", (req, res) => {
   });
 });
 
+
+
 /* =========================
    SHOPS / BOUTIQUES
 ========================= */
